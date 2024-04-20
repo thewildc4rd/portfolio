@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className='flex flex-col items-center justify-between h-screen bg-pink-pastel'>
-      Projects
+      <div className='text-7xl h-3/5 flex justify-center items-center w-screen'>Projects</div>
     </main>
   );
 }
