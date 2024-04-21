@@ -14,8 +14,10 @@ module.exports = {
         glaucous: '#677CCC',
         'rose-bonbon': '#EA4B93',
         'sky-magenta': '#D181BF',
-        mindaro: '#F6FC9C',
+        'naples-yellow': '#FEDF5F',
         emerald: '#23D18B',
+        lavender: '#CCD4F1',
+        'lavender-light': '#ccd4f16e',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

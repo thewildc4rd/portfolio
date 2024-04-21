@@ -17,40 +17,43 @@ export default function Navbar(props) {
   useEffect(() => {
     document.addEventListener('scroll', () => {
       if (window.scrollY != 0) {
-        document.querySelector('nav').classList.add('shadow-lg', 'bg-pink-medium', 'py-10');
-        document.querySelector('nav').classList.remove('bg-pink-pastel', 'py-14');
+        document.querySelector('nav').classList.add('opacity-90', 'bg-space-cadet-light');
+        document.querySelector('nav').classList.remove('bg-space-cadet-dark');
       } else {
-        document.querySelector('nav').classList.remove('shadow-lg', 'bg-pink-medium', 'py-10');
-        document.querySelector('nav').classList.add('bg-pink-pastel', 'py-14');
+        document.querySelector('nav').classList.remove('opacity-90', 'bg-space-cadet-light');
+        document.querySelector('nav').classList.add('bg-space-cadet-dark');
       }
     });
   }, []);
 
   return (
-    <nav className='w-full h-10 flex justify-center gap-6 items-center bg-pink-pastel px-14 py-14 sticky top-0 transition-all text-pink-black font-black'>
-      <div className='flex justify-center w-300px'>
-        <Link href={'/'} className='text-3xl mr-auto font-semibold'>
-          <Image
-            src={'/SN_icon.png'}
-            alt={'SN'}
-            width={'64'}
-            height={'64'}
-            className='hover:opacity-90 transition-all'
-          />
+    <nav className='mx-auto top-5 w-fit h-10 flex justify-center gap-6 items-center p-10 sticky transition-all duration-300 font-black bg-space-cadet-dark rounded-full'>
+      <Link
+        className={`font-medium text-lg hover:text-naples-yellow transition-all ${
+          pathname === '/about' ? 'active' : ''
+        }`}
+        href='/about'
+      >
+        About
+      </Link>
+      <Link href={'/'} className='text-3xl font-semibold'>
+        <Image
+          src={'/SN_logo.png'}
+          alt={'SN'}
+          width={'50'}
+          height={'50'}
+          className='hover:opacity-90 transition-all'
+        />
+      </Link>
+      <div className='flex gap-x-10 items-center flex-wrap'>
+        <Link
+          className={`font-medium text-lg hover:text-naples-yellow transition-all ${
+            pathname === '/projects' ? 'active' : ''
+          }`}
+          href='/projects'
+        >
+          Projects
         </Link>
-      </div>
-      <div className='flex justify-end gap-x-10 items-center flex-wrap flex-1'>
-        {navLinks.map((link, key) => (
-          <Link
-            key={key}
-            className={`font-medium text-lg hover:text-pink-dark transition-all ${
-              pathname === link.path ? 'active' : ''
-            }`}
-            href={link.path}
-          >
-            {link.title}
-          </Link>
-        ))}
       </div>
     </nav>
   );

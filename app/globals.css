@@ -3,25 +3,48 @@
 @tailwind utilities;
 
 :root {
-  --oxford-blue: '#171D2F';
-  --space-cadet-dark: '#1F253D';
-  --space-cadet-light: '#242C47';
-  --glaucous: '#677CCC';
-  --rose-bonbon: '#EA4B93';
-  --sky-magenta: '#D181BF';
-  --mindaro: '#F6FC9C';
-  --emerald: '#23D18B';
+  --oxford-blue: #171D2F;
+  --space-cadet-dark: #1F253D;
+  --space-cadet-light: #242C47;
+  --glaucous: #677CCC;
+  --rose-bonbon: #EA4B93;
+  --sky-magenta: #D181BF;
+  --naples-yellow: #FEDF5F;
+  --emerald: #23D18B;
+  --lavender: #CCD4F1;
+  --lavender-light: #ccd4f16e;
 }
 
-/* .active {
-  border-bottom: 3px #CF516B solid;
+@font-face {
+  font-family: Cloudy;
+  src: url(../fonts/Cloudy.ttf);
 }
 
-.social {
-  filter: invert(49%) sepia(12%) saturate(550%) hue-rotate(199deg) brightness(87%) contrast(89%);
+@font-face {
+  font-family: FatKat;
+  src: url(../fonts/FatKat.otf);
 }
 
-.social :hover {
-  opacity: 80%;
-  transition: opacity 0.1s ease-in;
-} */
+@font-face {
+  font-family: JingleStar;
+  src: url(../fonts/JingleStar.ttf);
+}
+
+@font-face {
+  font-family: Rocline;
+  src: url(../fonts/Rocline.ttf);
+}
+
+@font-face {
+  font-family: Askey;
+  src: url(../fonts/Askey.otf);
+}
+
+.home h1 {
+  font-family: Askey;
+}
+
+.active {
+  color: var(--naples-yellow);
+  text-decoration: underline;
+}
