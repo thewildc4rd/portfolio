@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-.active {
+:root {
+  --oxford-blue: '#171D2F';
+  --space-cadet-dark: '#1F253D';
+  --space-cadet-light: '#242C47';
+  --glaucous: '#677CCC';
+  --rose-bonbon: '#EA4B93';
+  --sky-magenta: '#D181BF';
+  --mindaro: '#F6FC9C';
+  --emerald: '#23D18B';
+}
+
+/* .active {
   border-bottom: 3px #CF516B solid;
 }
 
@@ -13,4 +24,4 @@
 .social :hover {
   opacity: 80%;
   transition: opacity 0.1s ease-in;
-}
+} */

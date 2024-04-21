@@ -8,12 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'pink-pastel': '#F9E6EA',
-        'pink-medium': '#ECC0CE',
-        'pink-dark': '#B84061',
-        'pink-black': '#46061B',
-        'navy-dark': '#212130',
-        'navy-light': '#595A73',
+        'oxford-blue': '#171D2F',
+        'space-cadet-dark': '#1F253D',
+        'space-cadet-light': '#242C47',
+        glaucous: '#677CCC',
+        'rose-bonbon': '#EA4B93',
+        'sky-magenta': '#D181BF',
+        mindaro: '#F6FC9C',
+        emerald: '#23D18B',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
