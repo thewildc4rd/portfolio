@@ -41,10 +41,6 @@
   src: url(../fonts/Askey.otf);
 }
 
-.home h1 {
-  font-family: Askey;
-}
-
 .active {
   color: var(--naples-yellow);
   border-bottom: var(--naples-yellow) 2px solid;
@@ -57,4 +53,76 @@
 nav {
   backdrop-filter: blur(0.5rem);
   -webkit-backdrop-filter: blur(0.5rem);
+  z-index: 100;
+}
+
+.home {
+  background: rgb(31, 37, 61);
+  background: linear-gradient(180deg, rgba(31, 37, 61, 1) 16%, rgba(50, 69, 145, 1) 57%, rgba(209, 129, 191, 1) 100%);
+}
+
+.home h1 {
+  font-family: Askey;
+  z-index: 10;
+  filter: drop-shadow(0px 2px 5px var(--space-cadet-light-trans));
+}
+
+.shooting-star {
+  position: absolute;
+  rotate: 315deg;
+  width: 20px;
+  height: 20px;
+  background: var(--naples-yellow);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: animate 3s linear forwards;
+}
+
+.shooting-star:nth-of-type(1) {
+  top: 60%;
+  left: 25%;
+}
+
+.shooting-star:nth-of-type(2) {
+  top: 35%;
+  left: 65%;
+}
+
+.shooting-star:nth-of-type(3) {
+  top: 10%;
+  left: 25%;
+}
+
+.shooting-star::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 5px;
+  background: linear-gradient(90deg, var(--naples-yellow), transparent);
+}
+
+.cloud:nth-of-type(1) {
+  position: absolute;
+  top: 32%;
+  left: -5%;
+  z-index: 2;
+  filter: drop-shadow(0px 5px 10px var(--space-cadet-light));
+}
+
+.cloud:nth-of-type(2) {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  z-index: 2;
+  filter: drop-shadow(0px 5px 10px var(--space-cadet-light));
+}
+
+.cloud:nth-of-type(3) {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 2;
+  filter: drop-shadow(0px 5px 10px var--space-cadet-light);
 }
