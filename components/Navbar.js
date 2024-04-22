@@ -17,17 +17,17 @@ export default function Navbar(props) {
   useEffect(() => {
     document.addEventListener('scroll', () => {
       if (window.scrollY != 0) {
-        document.querySelector('nav').classList.add('opacity-90', 'bg-space-cadet-light');
+        document.querySelector('nav').classList.add('bg-space-cadet-light-trans');
         document.querySelector('nav').classList.remove('bg-space-cadet-dark');
       } else {
-        document.querySelector('nav').classList.remove('opacity-90', 'bg-space-cadet-light');
+        document.querySelector('nav').classList.remove('bg-space-cadet-light-trans');
         document.querySelector('nav').classList.add('bg-space-cadet-dark');
       }
     });
   }, []);
 
   return (
-    <nav className='mx-auto top-5 w-fit h-10 flex justify-center gap-6 items-center p-10 sticky transition-all duration-300 font-black bg-space-cadet-dark rounded-full'>
+    <nav className='mx-auto top-5 w-fit h-10 flex justify-center gap-6 items-center p-10 sticky transition-all duration-300 font-black rounded-full'>
       <Link
         className={`font-medium text-lg hover:text-naples-yellow transition-all ${
           pathname === '/about' ? 'active' : ''
@@ -42,7 +42,7 @@ export default function Navbar(props) {
           alt={'SN'}
           width={'50'}
           height={'50'}
-          className='hover:opacity-90 transition-all'
+          className='logo transition-all hover:scale-110 hover:shadow-naples-yellow'
         />
       </Link>
       <div className='flex gap-x-10 items-center flex-wrap'>

@@ -11,6 +11,7 @@ module.exports = {
         'oxford-blue': '#171D2F',
         'space-cadet-dark': '#1F253D',
         'space-cadet-light': '#242C47',
+        'space-cadet-light-trans': '#242c47b7',
         glaucous: '#677CCC',
         'rose-bonbon': '#EA4B93',
         'sky-magenta': '#D181BF',

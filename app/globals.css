@@ -6,6 +6,7 @@
   --oxford-blue: #171D2F;
   --space-cadet-dark: #1F253D;
   --space-cadet-light: #242C47;
+  --space-cadet-light-trans: #242c47b7;
   --glaucous: #677CCC;
   --rose-bonbon: #EA4B93;
   --sky-magenta: #D181BF;
@@ -46,5 +47,14 @@
 
 .active {
   color: var(--naples-yellow);
-  text-decoration: underline;
+  border-bottom: var(--naples-yellow) 2px solid;
+}
+
+.logo:hover {
+  filter: drop-shadow(0px 2px 20px var(--naples-yellow));
+}
+
+nav {
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
 }
