@@ -12,6 +12,7 @@ module.exports = {
         'space-cadet-dark': '#1F253D',
         'space-cadet-light': '#242C47',
         'space-cadet-light-trans': '#242c47b7',
+        'marian-blue': '#324591',
         glaucous: '#677CCC',
         'rose-bonbon': '#EA4B93',
         'sky-magenta': '#D181BF',

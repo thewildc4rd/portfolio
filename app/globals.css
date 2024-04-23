@@ -7,6 +7,7 @@
   --space-cadet-dark: #1F253D;
   --space-cadet-light: #242C47;
   --space-cadet-light-trans: #242c47b7;
+  --marian-blue: #324591;
   --glaucous: #677CCC;
   --rose-bonbon: #EA4B93;
   --sky-magenta: #D181BF;
@@ -56,9 +57,8 @@ nav {
   z-index: 100;
 }
 
-.home {
-  background: rgb(31, 37, 61);
-  background: linear-gradient(180deg, rgba(31, 37, 61, 1) 16%, rgba(50, 69, 145, 1) 57%, rgba(209, 129, 191, 1) 100%);
+.sky {
+  background: linear-gradient(180deg, var(--space-cadet-dark) 16%, var(--marian-blue) 57%, var(--sky-magenta) 100%);
 }
 
 .home h1 {
