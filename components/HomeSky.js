@@ -25,27 +25,29 @@ const HomeSky = (props) => {
   }, []);
 
   return (
-    <div className='sky h-screen w-full flex flex-col justify-start mt-20 items-center p-10'>
-      <h2 className='text-2xl bg-glaucous bg-opacity-85 hover:bg-opacity-100 px-10 py-2 rounded-2xl shadow-xl hover:-translate-y-2 transition-all hover:-rotate-3'>
-        Hi, my name is
-      </h2>
-      <h1 className='text-9xl text-sky-magenta'>Sabrina</h1>
-      {[1, 2, 3].map((num) => (
-        <motion.img
-          key={num}
-          src={`/cloud${num}.png`}
-          alt={'cloud'}
-          width={'500'}
-          height={'500'}
-          className={`cloud cloud-${num} transition-all`}
-        ></motion.img>
-      ))}
-      {[1, 2, 3].map((num) => (
-        <motion.span
-          key={num}
-          className={`shooting-star shooting-star-${num} transition-all`}
-        ></motion.span>
-      ))}
+    <div className='h-screen w-screen relative'>
+      <div className='sky h-screen w-screen flex flex-col justify-start items-center p-10 absolute -z-10'>
+        <h2 className='mt-20 text-2xl bg-glaucous bg-opacity-85 hover:bg-opacity-100 px-10 py-2 rounded-2xl shadow-xl hover:-translate-y-2 transition-all hover:-rotate-3'>
+          Hi, my name is
+        </h2>
+        <h1 className='text-9xl text-sky-magenta'>Sabrina</h1>
+        {[1, 2, 3].map((num) => (
+          <motion.img
+            key={num}
+            src={`/cloud${num}.png`}
+            alt={'cloud'}
+            width={'500'}
+            height={'500'}
+            className={`cloud cloud-${num} transition-all`}
+          ></motion.img>
+        ))}
+        {[1, 2, 3].map((num) => (
+          <motion.span
+            key={num}
+            className={`shooting-star shooting-star-${num} transition-all`}
+          ></motion.span>
+        ))}
+      </div>
     </div>
   );
 };

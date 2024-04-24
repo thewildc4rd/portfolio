@@ -6,7 +6,9 @@ export default function Home() {
   return (
     <main className='home h-full w-full'>
       <HomeSky />
-      <div className='h-screen w-full flex flex-col justify-center items-center p-10'>jsdfhsjk</div>
+      <div className='h-screen w-full flex flex-col justify-center items-center p-10 bg-space-cadet-dark'>
+        !
+      </div>
     </main>
   );
 }
