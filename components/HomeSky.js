@@ -28,7 +28,7 @@ const HomeSky = (props) => {
   return (
     <div className='sky h-[94svh] w-screen relative flex flex-col justify-start items-center p-10'>
       <h2 className='mt-20 text-2xl bg-glaucous bg-opacity-85 hover:bg-opacity-100 px-10 py-2 rounded-2xl shadow-xl hover:-translate-y-2 transition-all hover:-rotate-3'>
-        Hi, my name is
+        Hi! My name is
       </h2>
       <h1 className='text-9xl text-sky-magenta'>Sabrina</h1>
       {[1, 2, 3].map((num) => (
