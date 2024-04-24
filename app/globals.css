@@ -61,7 +61,7 @@ nav {
   background: linear-gradient(180deg, var(--space-cadet-dark) 16%, var(--marian-blue) 57%, var(--sky-magenta) 100%);
 }
 
-.home h1 {
+.home .sky h1 {
   font-family: Askey;
   z-index: 5;
   filter: drop-shadow(0px 2px 5px var(--space-cadet-light-trans));
