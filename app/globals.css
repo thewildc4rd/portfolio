@@ -61,8 +61,8 @@ nav {
   background: linear-gradient(180deg, var(--space-cadet-dark) 16%, var(--marian-blue) 57%, var(--sky-magenta) 100%);
 }
 
-#home #sky h1 {
-  font-family: Askey;
+#home #sky h1,
+#home #sky h2 {
   z-index: 5;
   filter: drop-shadow(0px 2px 5px var(--space-cadet-light-trans));
 }
@@ -81,7 +81,7 @@ nav {
 
 @keyframes glow {
   from {
-    filter: drop-shadow(0px 0px 0px var(--naples-yellow));
+    filter: drop-shadow(0px 1px 8px var(--naples-yellow));
   }
 
   to {
@@ -165,7 +165,7 @@ nav {
 .squiggle {
   stroke-dasharray: 1600;
   stroke-dashoffset: 1600;
-  animation: draw 1.2s ease-in forwards;
+  animation: draw 1.5s ease-in forwards;
 }
 
 @keyframes draw {
