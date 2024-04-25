@@ -19,7 +19,7 @@ module.exports = {
         'naples-yellow': '#FEDF5F',
         emerald: '#23D18B',
         lavender: '#CCD4F1',
-        'lavender-light': '#ccd4f16e',
+        'lavender-light': '#e5eafb',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className='w-full h-320 bg-oxford-blue text-lavender-light flex flex-col place-content-center items-center gap-4 p-16 max-[600px]:p-10'>
+    <footer className='w-full h-320 bg-oxford-blue text-lavender text-opacity-80 flex flex-col place-content-center items-center gap-4 p-16 max-[600px]:p-10'>
       <div className='flex flex-row gap-2'>
         <Link
           href={'https://www.linkedin.com/in/sabrina-nahabedian/'}

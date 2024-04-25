@@ -31,10 +31,25 @@ const HomeSky = (props) => {
       id='sky'
       className='h-[94svh] w-screen relative flex flex-col justify-start items-center p-10'
     >
-      <h2 className='mt-20 text-2xl bg-glaucous bg-opacity-85 hover:bg-opacity-100 px-10 py-2 rounded-2xl shadow-xl hover:-translate-y-2 transition-all hover:-rotate-3'>
+      <h2 className='mt-20 text-2xl text-lavender-light bg-glaucous bg-opacity-85 hover:bg-opacity-100 px-10 py-2 rounded-2xl shadow-xl hover:-translate-y-2 transition-all hover:-rotate-3'>
         Hi! My name is
       </h2>
       <h1 className='text-9xl text-sky-magenta'>Sabrina</h1>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 1491 117'
+        className='z-10 w-[450px] ml-5'
+      >
+        <path
+          class='squiggle'
+          fill='none'
+          stroke='#D181BF'
+          stroke-miterlimit='10'
+          stroke-width='20'
+          stroke-linecap='round'
+          d='M14.5 81C14.5 81 127 -2.00003 138.5 12.5C150 27 116 65 135 87.5C154 110 317.237 -1.83905 349.5 12.5C367.5 20.4999 349.5 72 391 72C485.161 72 552.849 23.2382 600 32.5C614.5 35.3482 615 79.5 644 87.5C673 95.5 779.874 58.8597 875.5 50.5C962.487 42.8955 1011.68 43.3055 1099 44C1195.18 44.7649 1354 58.5 1354 58.5'
+        />
+      </svg>
       {[1, 2, 3].map((num) => (
         <motion.img
           key={num}
