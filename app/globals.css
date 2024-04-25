@@ -170,8 +170,10 @@ nav {
 
 .cross {
   stroke-dasharray: 90;
-  /* stroke-dashoffset: 90; */
-  /* animation: draw 0.8s ease-in forwards; */
+}
+
+.zig-zag {
+  stroke-dasharray: 1000;
 }
 
 @keyframes draw {

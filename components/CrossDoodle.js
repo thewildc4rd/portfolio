@@ -4,10 +4,9 @@ import React from 'react';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-const CrossDoodle = ({ style }) => {
+const CrossDoodle = ({ styles, delay }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   return (
     <svg
       width='30'
@@ -15,7 +14,12 @@ const CrossDoodle = ({ style }) => {
       viewBox='0 0 98 96'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={`absolute z-10 ${style}`}
+      className={`${styles}`}
+      style={{
+        strokeDashoffset: isInView ? 0 : 90,
+        transition: `opacity 0.5s linear ${delay ? delay : '0s'}`,
+      }}
+      ref={ref}
     >
       <path
         className='cross'
