@@ -4,7 +4,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-const crossDoodle = ({ style }) => {
+const CrossDoodle = ({ style }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -39,4 +39,4 @@ const crossDoodle = ({ style }) => {
   );
 };
 
-export default crossDoodle;
+export default CrossDoodle;

@@ -3,7 +3,6 @@ import SquiggleDoodle from './SquiggleDoodle';
 import { motion, useAnimationControls, useScroll, animate } from 'framer-motion';
 import { useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const HomeSky = (props) => {
   const controls = useAnimationControls();

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const squiggleDoodle = (props) => {
+const SquiggleDoodle = (props) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1491 117' className='z-10 w-[600px] ml-5'>
       <path
@@ -16,4 +16,4 @@ const squiggleDoodle = (props) => {
   );
 };
 
-export default squiggleDoodle;
+export default SquiggleDoodle;
