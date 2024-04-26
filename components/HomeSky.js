@@ -61,8 +61,8 @@ const HomeSky = (props) => {
         id='down-arrow'
         onClick={() =>
           document
-            .getElementById('home-overview')
-            .scrollIntoView({ behavior: 'smooth', block: 'start' })
+            .getElementById('home-about-me')
+            .scrollIntoView({ behavior: 'smooth', block: 'center' })
         }
       />
     </div>
