@@ -11,7 +11,7 @@ const AboutMeText = (props) => {
 
   return (
     <div className='h-full w-full flex-1' ref={ref}>
-      <h1 className='text-5xl font-semibold'>About me</h1>
+      <h1 className='text-5xl font-semibold'>About Me</h1>
       <CurvedUnderlineDoodle offset={isInView ? 0 : 600} />
       <p className='mt-4 text-lg'>
         I am a 4th year Commerce/Computer Science student at the University of New South Wales
@@ -34,7 +34,7 @@ const AboutMeText = (props) => {
           Commerce/Comp Sci @ UNSW
         </div>
         <div className='py-2 px-3 bg-rose-bonbon bg-opacity-70 text-pink-100 rounded-xl w-fit hover:scale-105 hover:bg-opacity-80 transition-all text-center'>
-          Mathematics Tutor
+          Math Tutor
         </div>
         <div className='py-2 px-3 bg-rose-bonbon bg-opacity-70 text-pink-100 rounded-xl w-fit hover:scale-105 hover:bg-opacity-80 transition-all text-center'>
           IT Admin
