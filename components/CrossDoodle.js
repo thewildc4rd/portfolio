@@ -4,7 +4,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-const CrossDoodle = ({ styles, delay }) => {
+const CrossDoodle = ({ styles, delay, fill }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
@@ -25,7 +25,7 @@ const CrossDoodle = ({ styles, delay }) => {
         className='cross'
         d='M48 7V89.5'
         fill='none'
-        stroke='#FEDF5F'
+        stroke={fill ? fill : '#FEDF5F'}
         strokeMiterlimit='10'
         strokeWidth='13'
         strokeLinecap='round'
@@ -34,7 +34,7 @@ const CrossDoodle = ({ styles, delay }) => {
         className='cross'
         d='M91 48.5H6.5'
         fill='none'
-        stroke='#FEDF5F'
+        stroke={fill ? fill : '#FEDF5F'}
         strokeMiterlimit='10'
         strokeWidth='13'
         strokeLinecap='round'
