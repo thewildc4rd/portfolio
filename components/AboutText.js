@@ -5,7 +5,7 @@ import CurvedUnderlineDoodle from './CurvedUnderlineDoodle';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-const AboutMeText = (props) => {
+const AboutText = (props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
@@ -44,4 +44,4 @@ const AboutMeText = (props) => {
   );
 };
 
-export default AboutMeText;
+export default AboutText;

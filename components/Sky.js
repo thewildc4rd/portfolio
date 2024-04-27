@@ -4,7 +4,7 @@ import { motion, useAnimationControls, useScroll, animate } from 'framer-motion'
 import { useEffect } from 'react';
 import Image from 'next/image';
 
-const HomeSky = (props) => {
+const Sky = (props) => {
   const controls = useAnimationControls();
   const { scrollYProgress } = useScroll();
 
@@ -60,13 +60,11 @@ const HomeSky = (props) => {
         className='absolute bottom-20 z-10'
         id='down-arrow'
         onClick={() =>
-          document
-            .getElementById('home-about-me')
-            .scrollIntoView({ behavior: 'smooth', block: 'center' })
+          document.getElementById('about').scrollIntoView({ behavior: 'smooth', block: 'center' })
         }
       />
     </div>
   );
 };
 
-export default HomeSky;
+export default Sky;

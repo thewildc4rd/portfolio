@@ -52,10 +52,16 @@
 }
 
 nav {
-  backdrop-filter: blur(0.5rem);
-  -webkit-backdrop-filter: blur(0.5rem);
+  background-color: var(--space-cadet-dark);
   z-index: 100;
 }
+
+.nav-blur {
+  background-color: var(--space-cadet-light-trans);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
+}
+
 
 #sky {
   background: linear-gradient(180deg, var(--space-cadet-dark) 16%, var(--marian-blue) 57%, var(--sky-magenta) 100%);

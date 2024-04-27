@@ -6,7 +6,7 @@ import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 import WaveDoodle from './WaveDoodle';
 
-const HomeSkills = (props) => {
+const Skills = (props) => {
   const languages = [
     'Python',
     'C',
@@ -54,6 +54,7 @@ const HomeSkills = (props) => {
 
   return (
     <div
+      id='skills'
       ref={ref}
       className='h-fit w-screen flex flex-col justify-center items-center px-10 py-10 bg-space-cadet-light relative'
     >
@@ -68,4 +69,4 @@ const HomeSkills = (props) => {
   );
 };
 
-export default HomeSkills;
+export default Skills;

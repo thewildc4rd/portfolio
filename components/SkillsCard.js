@@ -18,7 +18,7 @@ const SkillsCard = ({ heading, skills, delay }) => {
         style={{
           opacity: isInView ? 100 : 0,
           transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 384px)',
-          transition: `all 1s cubic-bezier(0,.8,.21,1) ${delay ? delay : '0s'}`,
+          transition: `all 0.75s cubic-bezier(0,.8,.21,1) ${delay ? delay : '0s'}`,
         }}
       >
         <h3 className='text-2xl font-semibold text-lavender mb-4'>{heading}</h3>

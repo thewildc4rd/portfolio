@@ -7,7 +7,7 @@ import ZigZagDoodle from './ZigZagDoodle';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-const AboutMePhoto = (props) => {
+const AboutPhoto = (props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const card2Text = [
@@ -120,4 +120,4 @@ const AboutMePhoto = (props) => {
   );
 };
 
-export default AboutMePhoto;
+export default AboutPhoto;
