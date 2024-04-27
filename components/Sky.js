@@ -29,12 +29,14 @@ const Sky = (props) => {
   return (
     <div
       id='sky'
-      className='section h-[94svh] w-screen relative flex flex-col justify-start items-center p-10'
+      className='section h-[94svh] w-screen relative flex flex-col justify-start items-center py-10'
     >
-      <h2 className='font-semibold mt-28 text-5xl text-lavender-light bg-opacity-85 hover:bg-opacity-100 px-10 py-2'>
+      <h2 className='font-semibold mt-28 text-5xl text-lavender-light bg-opacity-85 hover:bg-opacity-100 px-10 py-2 max-md:text-3xl max-sm:text-2xl'>
         Hi, my name is
       </h2>
-      <h1 className='text-9xl text-sky-magenta font-semibold'>Sabrina</h1>
+      <h1 className='text-9xl text-sky-magenta font-semibold max-md:text-8xl max-sm:text-7xl'>
+        Sabrina
+      </h1>
       <SquiggleDoodle />
       {[1, 2, 3].map((num) => (
         <motion.img
