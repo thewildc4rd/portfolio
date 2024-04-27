@@ -1,13 +1,14 @@
 import { Inter } from 'next/font/google';
 import { Poppins } from 'next/font/google';
 import './globals.css';
-import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import BootstrapClient from '@/components/BootstrapClient.js';
 
-const inter = Inter({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
-  subsets: ['latin'],
-});
+// const inter = Inter({
+//   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
+//   subsets: ['latin'],
+// });
 
 const poppins = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],
@@ -26,10 +27,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${poppins.className} min-h-screen flex-col flex bg-space-cadet-dark text-lavender overflow-x-hidden`}
+        className={`${poppins.className} min-h-screen bg-space-cadet-dark text-lavender h-full w-full flex-col flex`}
       >
         <Navbar />
-        <div className='flex-1'>{children}</div>
+        {children}
         <Footer />
       </body>
     </html>

@@ -5,10 +5,15 @@ import About from '@/components/About';
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 import Expierence from '@/components/Expierence';
-
 export default function Home() {
   return (
-    <main id='home' className='h-full w-full'>
+    <main
+      id='home'
+      className='h-full w-full'
+      data-bs-spy='scroll'
+      data-bs-target='#nav'
+      data-bs-smooth-scroll='true'
+    >
       <Sky />
       <About />
       <Skills />

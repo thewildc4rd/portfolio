@@ -27,12 +27,11 @@ export default function Navbar(props) {
   }, []);
 
   return (
-    <nav className='mx-auto top-5 w-fit h-10 flex justify-center gap-6 items-center p-10 sticky transition-all duration-300 font-black rounded-full z-[100]'>
-      <Link
-        href={'/'}
-        scroll={false}
-        onClick={() => globalThis.scrollTo({ top: 0, behavior: 'smooth' })}
-      >
+    <nav
+      id='nav'
+      className='mx-auto mt-2 top-2 w-fit h-10 flex justify-center gap-10 items-center p-10 sticky transition-all duration-300 font-black rounded-full z-[100]'
+    >
+      <a href={'#'} onClick={() => globalThis.scrollTo({ top: 0, behavior: 'smooth' })}>
         <Image
           src={'/SN_logo.png'}
           alt={'SN'}
@@ -40,27 +39,22 @@ export default function Navbar(props) {
           height={'50'}
           className='logo transition-all hover:scale-110 hover:shadow-naples-yellow'
         />
-      </Link>
-      <div className='flex gap-x-10 items-center flex-wrap'>
-        {links.map((link, idx) => (
-          <Link
-            key={idx}
-            className={`font-medium text-lg hover:text-naples-yellow transition-all ${
-              router.asPath === '/' + link.path ? 'active' : ''
-            }`}
-            onClick={() => {
-              document
-                .getElementById(link.id)
-                .scrollIntoView({ behavior: 'smooth', block: 'center' });
-              console.log(router.asPath);
-            }}
-            href={link.path}
-            scroll={false}
-          >
-            {link.title}
-          </Link>
-        ))}
-      </div>
+      </a>
+      {links.map((link, idx) => (
+        <a
+          key={idx}
+          className={'font-medium text-lg hover:text-naples-yellow transition-all'}
+          // onClick={() => {
+          //   document
+          //     .getElementById(link.id)
+          //     .scrollIntoView({ behavior: 'smooth', block: 'center' });
+          //   console.log(router.asPath);
+          // }}
+          href={link.path}
+        >
+          {link.title}
+        </a>
+      ))}
     </nav>
   );
 }

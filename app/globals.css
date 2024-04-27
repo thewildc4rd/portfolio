@@ -42,10 +42,10 @@
   src: url(../fonts/Askey.otf);
 }
 
-.active {
+/* .active {
   color: var(--naples-yellow);
   border-bottom: var(--naples-yellow) 2px solid;
-}
+} */
 
 .logo:hover {
   filter: drop-shadow(0px 2px 20px var(--naples-yellow));
@@ -65,6 +65,10 @@ nav {
 
 #sky {
   background: linear-gradient(180deg, var(--space-cadet-dark) 16%, var(--marian-blue) 57%, var(--sky-magenta) 100%);
+}
+
+#home {
+  overflow-x: clip;
 }
 
 #home #sky h1,
