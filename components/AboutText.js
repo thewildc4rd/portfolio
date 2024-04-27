@@ -10,7 +10,7 @@ const AboutText = (props) => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className='h-full w-full flex-1' ref={ref}>
+    <div className='h-full w-full flex-1 flex flex-col justify-center' ref={ref}>
       <h1 className='text-5xl font-semibold'>About Me</h1>
       <CurvedUnderlineDoodle offset={isInView ? 0 : 600} />
       <p className='mt-4 text-lg'>

@@ -38,7 +38,7 @@ const AboutPhoto = (props) => {
   ];
 
   return (
-    <div className='h-full w-[500px] relative flex justify-center items-center'>
+    <div className='h-[550px] w-[520px] relative flex justify-center items-center max-lg:w-full max-lg:h-[500px]'>
       <div
         ref={ref}
         className='card-1 opacity-0 w-full h-full max-w-[350px] max-h-[400px] rounded-3xl absolute z-[3] translate-x-3 translate-y-96 flex items-end shadow-xl shadow-gray-900 overflow-hidden'

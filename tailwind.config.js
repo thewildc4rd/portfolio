@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        lg: '1140px',
+      },
       colors: {
         'oxford-blue': '#171D2F',
         'space-cadet-dark': '#1F253D',

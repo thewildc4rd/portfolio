@@ -13,7 +13,7 @@ const SkillsCard = ({ heading, skills, delay }) => {
       <div
         ref={ref}
         className={
-          'flex flex-col items-center justify-start p-4 bg-glaucous bg-opacity-10 rounded-2xl shadow-xl transition-all h-full'
+          'min-h-80 flex flex-col items-center justify-start p-4 bg-glaucous bg-opacity-10 rounded-2xl shadow-xl transition-all max-lg:min-h-min'
         }
         style={{
           opacity: isInView ? 100 : 0,
@@ -21,7 +21,7 @@ const SkillsCard = ({ heading, skills, delay }) => {
           transition: `all 0.75s cubic-bezier(0,.8,.21,1) ${delay ? delay : '0s'}`,
         }}
       >
-        <h3 className='text-2xl font-semibold text-lavender mb-4'>{heading}</h3>
+        <h3 className='text-2xl font-semibold text-lavender mb-4 text-center'>{heading}</h3>
         <div className='flex flex-row flex-wrap gap-2 justify-center'>
           {skills.map((item, idx) => (
             <div

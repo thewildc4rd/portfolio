@@ -6,7 +6,7 @@ const About = (props) => {
   return (
     <div
       id='about'
-      className='h-[70svh] w-screen flex flex-row justify-center items-start px-10 py-14 gap-10 bg-space-cadet-dark'
+      className='section h-[75svh] w-screen flex flex-row justify-center px-10 py-14 gap-10 bg-space-cadet-dark max-lg:flex-col max-lg:h-fit'
     >
       <AboutPhoto />
       <AboutText />

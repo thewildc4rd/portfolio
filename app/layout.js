@@ -3,7 +3,6 @@ import { Poppins } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import BootstrapClient from '@/components/BootstrapClient.js';
 
 // const inter = Inter({
 //   weight: ['100', '200', '300', '400', '500', '600', '700', '800'],

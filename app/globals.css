@@ -42,10 +42,10 @@
   src: url(../fonts/Askey.otf);
 }
 
-/* .active {
+.active {
   color: var(--naples-yellow);
   border-bottom: var(--naples-yellow) 2px solid;
-} */
+}
 
 .logo:hover {
   filter: drop-shadow(0px 2px 20px var(--naples-yellow));

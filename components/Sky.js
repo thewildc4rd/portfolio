@@ -29,7 +29,7 @@ const Sky = (props) => {
   return (
     <div
       id='sky'
-      className='h-[94svh] w-screen relative flex flex-col justify-start items-center p-10'
+      className='section h-[94svh] w-screen relative flex flex-col justify-start items-center p-10'
     >
       <h2 className='font-semibold mt-28 text-5xl text-lavender-light bg-opacity-85 hover:bg-opacity-100 px-10 py-2'>
         Hi, my name is

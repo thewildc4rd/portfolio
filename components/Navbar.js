@@ -1,6 +1,4 @@
 'use client';
-
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import React, { useEffect } from 'react';
@@ -9,11 +7,9 @@ export default function Navbar(props) {
   const links = [
     { title: 'About', path: '#about', id: 'about' },
     { title: 'Skills', path: '#skills', id: 'skills' },
-    { title: 'Expierence', path: '#expirence', id: 'expierence' },
+    { title: 'Experience', path: '#experience', id: 'experience' },
     { title: 'Projects', path: '#projects', id: 'projects' },
   ];
-
-  const router = useRouter();
 
   // when you scroll change the nav bar styles (shadow and background colour)
   useEffect(() => {
@@ -23,6 +19,22 @@ export default function Navbar(props) {
       } else {
         document.querySelector('nav').classList.remove('nav-blur');
       }
+
+      let currentSection = 'home';
+      const sectionElements = document.querySelectorAll('.section');
+      const linkElements = document.querySelectorAll('.nav-link');
+
+      sectionElements.forEach((section) => {
+        if (window.scrollY >= section.offsetTop - 90) {
+          currentSection = section.id;
+        }
+      });
+      linkElements.forEach((link) => {
+        link.classList.remove('active');
+        if (link.href.includes(currentSection)) {
+          link.classList.add('active');
+        }
+      });
     });
   }, []);
 
@@ -41,19 +53,19 @@ export default function Navbar(props) {
         />
       </a>
       {links.map((link, idx) => (
-        <a
+        <Link
           key={idx}
-          className={'font-medium text-lg hover:text-naples-yellow transition-all'}
-          // onClick={() => {
-          //   document
-          //     .getElementById(link.id)
-          //     .scrollIntoView({ behavior: 'smooth', block: 'center' });
-          //   console.log(router.asPath);
-          // }}
+          className={'nav-link font-medium text-lg hover:text-naples-yellow transition-all'}
+          onClick={() => {
+            document
+              .getElementById(link.id)
+              .scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }}
+          scroll={false}
           href={link.path}
         >
           {link.title}
-        </a>
+        </Link>
       ))}
     </nav>
   );
