@@ -43,8 +43,8 @@ const Sky = (props) => {
           key={num}
           src={`/cloud${num}.png`}
           alt={'cloud'}
-          width={'500'}
-          height={'500'}
+          width={window.innerWidth > 600 ? '500' : '400'}
+          height={window.innerWidth > 600 ? '500' : '400'}
           className={`cloud cloud-${num} transition-all`}
         />
       ))}
