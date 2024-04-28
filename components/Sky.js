@@ -43,9 +43,9 @@ const Sky = (props) => {
           key={num}
           src={`/cloud${num}.png`}
           alt={'cloud'}
-          width={window.innerWidth > 600 ? '500' : '400'}
-          height={window.innerWidth > 600 ? '500' : '400'}
-          className={`cloud cloud-${num} transition-all`}
+          width={'500'}
+          height={'500'}
+          className={`cloud cloud-${num} transition-all max-md:w-[400px] max-md:h[400px]`}
         />
       ))}
       {[1, 2, 3].map((num) => (

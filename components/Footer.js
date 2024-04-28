@@ -20,7 +20,7 @@ export default function Footer() {
           <Image src={'/github_icon.svg'} alt={'github'} width={'35'} height={'35'} />
         </Link>
       </div>
-      <div>Copyright © Sabrina Nahabedian</div>
+      <div className='text-center'>Copyright © Sabrina Nahabedian</div>
     </footer>
   );
 }

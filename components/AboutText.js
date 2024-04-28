@@ -29,7 +29,7 @@ const AboutText = (props) => {
         and 2024/25 Summer internships for Software Engineering, IT, Commerce, and/or Economics.
       </p>
       <div className='w-full bg-space-cadet-light h-1 rounded my-4' />
-      <div className='flex flex-row gap-3'>
+      <div className='flex flex-row gap-3 flex-wrap'>
         <div className='py-2 px-3 bg-rose-bonbon bg-opacity-70 text-pink-100 rounded-xl w-fit hover:scale-105 hover:bg-opacity-80 transition-all text-center'>
           Commerce/Comp Sci @ UNSW
         </div>
