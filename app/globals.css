@@ -207,21 +207,3 @@ nav {
 .card-3 {
   background: linear-gradient(180deg, var(--naples-yellow) 0%, #f3ce3d 100%);
 }
-
-#mobile-nav {
-  display: none;
-}
-
-.hidden {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  #desktop-nav {
-    display: none;
-  }
-
-  #mobile-nav {
-    display: block;
-  }
-}
