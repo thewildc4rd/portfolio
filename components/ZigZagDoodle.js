@@ -17,10 +17,6 @@ const ZigZagDoodle = ({ styles, delay, fill }) => {
       strokeMiterlimit='10'
       strokeWidth='13'
       strokeLinecap='round'
-      // style={{
-      //   strokeDashoffset: isInView ? 0 : 5,
-      //   transition: `all 0.5s linear ${delay ? delay : '0s'}`,
-      // }}
     >
       <path
         className='zig-zag'

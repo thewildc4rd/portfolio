@@ -101,9 +101,8 @@ export default function Navbar() {
           alt={'SN'}
           width={'50'}
           height={'50'}
-          className={`logo transition-all hover:scale-110 hover:shadow-naples-yellow ${
-            open && 'max-xm:w-[100px]'
-          }`}
+          id='logo'
+          className={`transition-all hover:scale-110 ${open && 'max-xm:w-[100px]'}`}
         />
       </Link>
       <div

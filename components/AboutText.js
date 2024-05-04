@@ -17,19 +17,16 @@ const AboutText = (props) => {
         and gaming!
       </p>
       <p className='mt-4 text-lg'>
+        I’m very detail-orientated, hardworking, and organised. I enjoy working with others and
+        taking on new challenges.
+      </p>
+      <p className='mt-4 text-lg'>
         I am on track to graduate by the end of 2024 so I am actively seeking 2025 Graduate roles
         and 2024/25 Summer internships for Software Engineering, IT, Commerce, and/or Economics.
       </p>
-      <p className='mt-4 text-lg'>
-        --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-        --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-        --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-        --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-        --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-        --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
-      </p>
+
       <div className='w-full bg-space-cadet-light h-1 rounded my-4' />
-      <div className='flex flex-row gap-3 flex-wrap f'>
+      <div className='flex flex-row gap-3 flex-wrap'>
         <div className='py-2 px-3 bg-rose-bonbon bg-opacity-70 text-pink-100 rounded-xl w-fit hover:scale-105 hover:bg-opacity-80 transition-all text-center'>
           Commerce/Comp Sci @ UNSW
         </div>

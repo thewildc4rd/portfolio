@@ -13,6 +13,7 @@ module.exports = {
         xm: '750px',
         lg: '1140px',
         xl: '1300px',
+        '2xl': '1500px',
       },
       colors: {
         'oxford-blue': '#171D2F',
