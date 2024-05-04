@@ -40,7 +40,7 @@ const Education = (props) => {
           <h3 className='font-medium text-xl text-naples-yellow mb-1'>
             Bachelor of Commerce/Computer Science
           </h3>
-          <div className='text-base font-medium mb-4'>2021 - Present (Expected Nov 2024)</div>
+          <div className='text-base font-medium mb-4'>Feb 2021 - Present (Expected Nov 2024)</div>
           <ul className='text-lg list-disc ml-8'>
             <li className='mb-1'>
               <span className='font-medium'>WAM:</span> 74.875
