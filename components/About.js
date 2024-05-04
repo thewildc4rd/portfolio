@@ -11,7 +11,7 @@ const About = (props) => {
   return (
     <div
       id='about'
-      className='section h-fit w-screen flex flex-col justify-center items-center px-10 py-14 bg-space-cadet-dark'
+      className='section h-fit w-screen flex flex-col justify-center items-center px-10 py-28 bg-space-cadet-dark'
       ref={ref}
     >
       <h1 className='text-4xl font-semibold'>About Me</h1>

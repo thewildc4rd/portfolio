@@ -23,12 +23,12 @@ const Education = (props) => {
   return (
     <div
       id='education'
-      className='section h-fit w-screen flex flex-col justify-center items-center px-96 py-14 bg-space-cadet-dark max-2xl:px-64 max-lg:px-28 max-xm:px-20 max-md:px-12'
+      className='section h-fit w-screen flex flex-col justify-center items-center px-96 py-28 bg-space-cadet-dark max-2xl:px-64 max-lg:px-28 max-xm:px-20 max-md:px-12'
       ref={ref}
     >
       <h2 className='text-4xl font-semibold z-10'>Education</h2>
       <DoubleLineDoodle offset1={isInView ? 0 : 500} offset2={isInView ? 0 : 400} />
-      <div className='mt-10 flex flex-row gap-5 w-full'>
+      <div className='mt-10 flex flex-row gap-5 w-full justify-center'>
         <Image
           src={'/UNSW_logo.png'}
           width={'100'}
@@ -36,7 +36,7 @@ const Education = (props) => {
           className='rounded-full shadow-xl w-[150px] h-[150px] max-xm:w-[100px] max-xm:h-[100px]'
           alt='UNSW logo'
         />
-        <div className='bg-space-cadet-light-trans p-7 rounded-3xl shadow-xl flex-1 text-lg flex flex-col'>
+        <div className='bg-space-cadet-light-trans p-7 rounded-3xl shadow-xl w-fit text-lg flex flex-col lg:pr-36 xl:pr-48'>
           <h3 className='font-medium text-xl text-naples-yellow mb-1'>
             Bachelor of Commerce/Computer Science
           </h3>
@@ -51,7 +51,7 @@ const Education = (props) => {
                 {courses.map((item, idx) => (
                   <li
                     key={idx}
-                    className='w-fit mt-1 hover:scale-105 transition-all hover:bg-opacity-100'
+                    className='w-fit mt-1 hover:scale-105 hover:text-naples-yellow transition-all hover:bg-opacity-100'
                   >
                     {item}
                   </li>
