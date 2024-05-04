@@ -10,7 +10,9 @@ module.exports = {
       screens: {
         sm: '400px',
         md: '600px',
+        xm: '750px',
         lg: '1140px',
+        xl: '1300px',
       },
       colors: {
         'oxford-blue': '#171D2F',

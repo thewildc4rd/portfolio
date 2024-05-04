@@ -12,6 +12,7 @@ export default function Navbar() {
   const links = [
     { title: 'About', path: '#about', id: 'about' },
     { title: 'Skills', path: '#skills', id: 'skills' },
+    { title: 'Education', path: '#education', id: 'education' },
     { title: 'Experience', path: '#experience', id: 'experience' },
     { title: 'Projects', path: '#projects', id: 'projects' },
   ];
@@ -47,7 +48,9 @@ export default function Navbar() {
     open
       ? document.body.classList.add('overflow-hidden')
       : document.body.classList.remove('overflow-hidden');
+  }, [open]);
 
+  useEffect(() => {
     if (!open) {
       if (selectedId === 'home') {
         globalThis.scrollTo({ top: 0, behavior: 'smooth' });
@@ -62,8 +65,8 @@ export default function Navbar() {
       id='nav'
       className={`mx-auto mt-2 top-2 w-fit h-10 sticky flex justify-center gap-9 items-center p-10 transition-all duration-300 rounded-[40px] z-[100] ${
         open
-          ? 'max-md:w-full max-md:h-[100vh] max-md:top-0 max-md:rounded-none max-md:flex-col max-md:justify-start'
-          : 'max-md:rounded-[40px] max-md:mx-left max-md:mt-5 max-md:ml-5 max-md:top-5 max-md:w-fit max-md:h-fit max-md:p-3'
+          ? 'max-xm:w-full max-xm:h-[100vh] max-xm:top-0 max-xm:rounded-none max-xm:flex-col max-xm:justify-start'
+          : 'max-xm:rounded-[40px] max-xm:mx-left max-xm:mt-5 max-xm:ml-5 max-xm:top-5 max-xm:w-fit max-xm:h-fit max-xm:p-3'
       }`}
     >
       {!open && (
@@ -91,7 +94,7 @@ export default function Navbar() {
             globalThis.scrollTo({ top: 0, behavior: 'smooth' });
           }
         }}
-        className={!open ? 'max-md:hidden' : 'max-md:mt-28'}
+        className={!open ? 'max-xm:hidden' : 'max-xm:mt-28'}
       >
         <Image
           src={'/SN_logo.png'}
@@ -99,20 +102,20 @@ export default function Navbar() {
           width={'50'}
           height={'50'}
           className={`logo transition-all hover:scale-110 hover:shadow-naples-yellow ${
-            open && 'max-md:w-[100px]'
+            open && 'max-xm:w-[100px]'
           }`}
         />
       </Link>
       <div
         className={`flex justify-center gap-9 items-center font-black ${
-          open ? 'max-md:flex-col  max-md:mb-auto' : 'max-md:hidden'
+          open ? 'max-xm:flex-col  max-xm:mb-auto' : 'max-xm:hidden'
         }`}
       >
         {links.map((link, idx) => (
           <Link
             key={idx}
             className={`nav-link font-medium text-lg hover:text-naples-yellow transition-all ${
-              open && 'max-md:text-5xl max-md:font-semibold'
+              open && 'max-xm:text-5xl max-xm:font-semibold'
             }`}
             onClick={() => {
               if (open) {

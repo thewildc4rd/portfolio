@@ -9,11 +9,11 @@ const SkillsCard = ({ heading, skills, delay }) => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div className='flex-1 hover:-translate-y-4 transition-all'>
+    <div className='flex-1 lg:hover:-translate-y-4 transition-all'>
       <div
         ref={ref}
         className={
-          'min-h-80 flex flex-col items-center justify-start p-4 bg-glaucous bg-opacity-10 rounded-2xl shadow-xl transition-all max-lg:min-h-min'
+          'xl:min-h-64 lg:min-h-80 flex flex-col items-center justify-start p-4 bg-glaucous bg-opacity-10 rounded-2xl shadow-xl transition-all max-lg:min-h-min'
         }
         style={{
           opacity: isInView ? 100 : 0,
