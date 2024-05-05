@@ -19,14 +19,29 @@ const Projects = (props) => {
       <SquiggleDoodleV3 offset={isInView ? 0 : 1350} />
       <div className='mt-10 flex flex-col gap-10 h-full w-full'>
         <ProjectCard
+          title={'Airbrb'}
+          skills={['HTML', 'CSS', 'JavaScript', 'React.js']}
+          description={
+            'A property renting web app which allows users to create listings for properties which they would like to rent out to others.'
+          }
+          imgSrc={'/airbrb.png'}
+        />
+        <ProjectCard
           title={'Slackr'}
           skills={['HTML', 'CSS', 'JavaScript']}
-          description={'An instant messaging web app built using vanilla JavaScript, HTML and CSS.'}
-          imgSrc={'/slackr-placeholder.png'}
+          description={
+            'An instant messaging web app which lets users to directly or group message other users, react, edit, pin, and delete messages, get notifications, profiles, and send photos.'
+          }
+          imgSrc={'/slackr.png'}
         />
-        <div className='w-full bg-space-cadet-light-trans rounded-3xl p-7 shadow-xl'>project 2</div>
-        <div className='w-full bg-space-cadet-light-trans rounded-3xl p-7 shadow-xl'>project 3</div>
-        <div className='w-full bg-space-cadet-light-trans rounded-3xl p-7 shadow-xl'>project 4</div>
+        <ProjectCard
+          title={'RecipeBook'}
+          skills={['Swift']}
+          description={
+            'An iOS app where users can store and organise their recipes all in one place.'
+          }
+          imgSrc={'/recipe-book.jpg'}
+        />
       </div>
     </div>
   );
