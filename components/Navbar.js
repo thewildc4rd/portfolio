@@ -37,7 +37,7 @@ export default function Navbar() {
       });
       linkElements.forEach((link) => {
         link.classList.remove('active');
-        if (link.href.includes(currentSection)) {
+        if (link.id.includes(currentSection)) {
           link.classList.add('active');
         }
       });
@@ -112,6 +112,7 @@ export default function Navbar() {
       >
         {links.map((link, idx) => (
           <Link
+            id={`${link.id}-nav`}
             key={idx}
             className={`nav-link font-medium text-lg hover:text-naples-yellow transition-all ${
               open && 'max-xm:text-5xl max-xm:font-semibold'
@@ -127,7 +128,7 @@ export default function Navbar() {
               }
             }}
             scroll={false}
-            href={link.path}
+            href={'#'}
           >
             {link.title}
           </Link>

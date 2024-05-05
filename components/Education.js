@@ -28,7 +28,14 @@ const Education = (props) => {
     >
       <h2 className='text-4xl font-semibold z-10'>Education</h2>
       <DoubleLineDoodle offset1={isInView ? 0 : 500} offset2={isInView ? 0 : 400} />
-      <div className='mt-10 flex flex-row gap-5 w-full justify-center'>
+      <div
+        className='mt-10 flex flex-row gap-5 w-full justify-center'
+        style={{
+          opacity: isInView ? 100 : 0,
+          transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 384px)',
+          transition: 'all 0.75s cubic-bezier(0,.8,.21,1) 1.5s',
+        }}
+      >
         <Image
           src={'/UNSW_logo.png'}
           width={'100'}

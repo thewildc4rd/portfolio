@@ -2,6 +2,7 @@ import React from 'react';
 import SquiggleDoodleV2 from './SquiggleDoodleV2';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+import ExperienceCard from './ExperienceCard';
 
 const Expierence = (props) => {
   const ref = useRef(null);
@@ -16,40 +17,33 @@ const Expierence = (props) => {
       <h2 className='text-4xl font-semibold z-10'>Experience</h2>
       <SquiggleDoodleV2 offset={isInView ? 0 : 800} />
       <div className='mt-10 flex flex-col gap-10 h-full w-full'>
-        <div className='w-full bg-white bg-opacity-[2%] rounded-3xl p-7 shadow-xl'>
-          <div className='flex flex-row w-full'>
-            <h3 className='font-medium text-xl text-naples-yellow mb-1'>Mathematics Tutor</h3>
-            <div className='text-base font-medium mb-2 ml-auto justify-center items-center'>
-              Dec 2021 – Present
-            </div>
-          </div>
-          <h4 className='font-medium text-base italic mb-4'>Self-employed</h4>
-          <ul className='list-disc ml-10'>
-            <li className='mb-1'>
-              Tutoring Year 7-12 students in high school Mathematics to help them understand key
-              concepts
-            </li>
-            <li>
-              Assisting students with homework, projects, test preparation, papers, research and
-              other academic tasks
-            </li>
-          </ul>
-        </div>
-        <div className='w-full bg-white bg-opacity-[2%] rounded-3xl p-7 shadow-xl'>
-          <div className='flex flex-row w-full'>
-            <h3 className='font-medium text-xl text-naples-yellow mb-1'>IT Administrator</h3>
-            <div className='text-base font-medium mb-2 ml-auto justify-center items-center'>
-              Jul 2023 – Present
-            </div>
-          </div>
-          <h4 className='font-medium text-base italic mb-4'>Blankisa</h4>
-          <ul className='list-disc ml-10'>
-            <li>
-              Maintain the company’s computers, provide IT assistance, improve their Squarespace
-              website, and help improve productivity through the integration of new technology
-            </li>
-          </ul>
-        </div>
+        <ExperienceCard
+          title={'Mathematics Tutor'}
+          timePeriod={'Dec 2021 – Present'}
+          company={'Self-employed'}
+          dotPoints={[
+            'Tutoring Year 7-12 students in high school Mathematics to help them understand key concepts',
+            'Assisting students with homework, projects, test preparation, papers, research and other academic tasks',
+          ]}
+          style={{
+            opacity: isInView ? 100 : 0,
+            transform: isInView ? 'translate(0px, 0px)' : 'translate(-400px, 0px)',
+            transition: 'all 1s cubic-bezier(0,.8,.21,1) 1s',
+          }}
+        />
+        <ExperienceCard
+          title={'IT Administrator'}
+          timePeriod={'Jul 2023 – Present'}
+          company={'Blankisa'}
+          dotPoints={[
+            'Maintain the company’s computers, provide IT assistance, improve their Squarespace website, and help improve productivity through the integration of new technology',
+          ]}
+          style={{
+            opacity: isInView ? 100 : 0,
+            transform: isInView ? 'translate(0px, 0px)' : 'translate(400px, 0px)',
+            transition: 'all 1s cubic-bezier(0,.8,.21,1) 1.5s',
+          }}
+        />
       </div>
     </div>
   );
