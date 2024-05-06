@@ -4,10 +4,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HamburgerIcon from './HamburgerIcon';
 import CrossIcon from './CrossIcon';
+import { usePathname } from 'next/navigation';
+import BackArrowIcon from './BackArrowIcon';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [selectedId, setSelectedId] = useState('home');
+  const path = usePathname();
 
   const links = [
     { title: 'About', path: '#about', id: 'about' },
@@ -51,12 +54,10 @@ export default function Navbar() {
   }, [open]);
 
   useEffect(() => {
-    if (!open) {
-      if (selectedId === 'home') {
-        globalThis.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
+    if (selectedId === 'home') {
+      globalThis.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [selectedId]);
 
@@ -64,76 +65,79 @@ export default function Navbar() {
     <nav
       id='nav'
       className={`mx-auto mt-2 top-2 w-fit h-10 sticky flex justify-center gap-9 items-center p-10 transition-all duration-300 rounded-[40px] z-[100] ${
-        open
-          ? 'max-xm:w-full max-xm:h-[100vh] max-xm:top-0 max-xm:rounded-none max-xm:flex-col max-xm:justify-start'
-          : 'max-xm:rounded-[40px] max-xm:mx-left max-xm:mt-5 max-xm:ml-5 max-xm:top-5 max-xm:w-fit max-xm:h-fit max-xm:p-3'
+        path === '/' ? (open ? 'mini-nav-open' : 'mini-nav-closed') : 'back'
       }`}
     >
-      {!open && (
+      {path === '/' && !open && (
         <HamburgerIcon
           onClick={() => {
             setOpen(!open);
           }}
         />
       )}
-      {open && (
+      {path === '/' && open && (
         <CrossIcon
           onClick={() => {
             setOpen(!open);
           }}
         />
       )}
-      <Link
-        href={'#'}
-        scroll={false}
-        onClick={() => {
-          if (open) {
-            setOpen(!open);
-            setSelectedId('home');
-          } else {
-            globalThis.scrollTo({ top: 0, behavior: 'smooth' });
-          }
-        }}
-        className={!open ? 'max-xm:hidden' : 'max-xm:mt-28'}
-      >
-        <Image
-          src={'/SN_logo.png'}
-          alt={'SN'}
-          width={'50'}
-          height={'50'}
-          id='logo'
-          className={`transition-all hover:scale-110 ${open && 'max-xm:w-[100px]'}`}
-        />
-      </Link>
-      <div
-        className={`flex justify-center gap-9 items-center font-black ${
-          open ? 'max-xm:flex-col  max-xm:mb-auto' : 'max-xm:hidden'
-        }`}
-      >
-        {links.map((link, idx) => (
+
+      {path != '/' && (
+        <Link href={'/'}>
+          <BackArrowIcon />
+        </Link>
+      )}
+
+      {path === '/' && (
+        <>
           <Link
-            id={`${link.id}-nav`}
-            key={idx}
-            className={`nav-link font-medium text-lg hover:text-naples-yellow transition-all ${
-              open && 'max-xm:text-5xl max-xm:font-semibold'
-            }`}
+            href={'/'}
+            scroll={false}
             onClick={() => {
               if (open) {
                 setOpen(!open);
-                setSelectedId(link.id);
-              } else {
-                document
-                  .getElementById(link.id)
-                  .scrollIntoView({ behavior: 'smooth', block: 'start' });
               }
+              setSelectedId('home');
             }}
-            scroll={false}
-            href={'#'}
+            className={!open ? 'max-xm:hidden' : 'max-xm:mt-28'}
           >
-            {link.title}
+            <Image
+              src={'/SN_logo.png'}
+              alt={'SN'}
+              width={'50'}
+              height={'50'}
+              id='logo'
+              className={`transition-all hover:scale-110 ${open && 'max-xm:w-[100px]'}`}
+            />
           </Link>
-        ))}
-      </div>
+          <div
+            className={`flex justify-center gap-9 items-center font-black ${
+              open ? 'max-xm:flex-col  max-xm:mb-auto' : 'max-xm:hidden'
+            }`}
+          >
+            {links.map((link, idx) => (
+              <Link
+                id={`${link.id}-nav`}
+                key={idx}
+                className={`nav-link font-medium text-lg hover:text-naples-yellow transition-all ${
+                  open && 'max-xm:text-5xl max-xm:font-semibold'
+                }`}
+                onClick={() => {
+                  if (open) {
+                    setOpen(!open);
+                  }
+                  setSelectedId(link.id);
+                }}
+                scroll={false}
+                href={'/'}
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
     </nav>
   );
 }
