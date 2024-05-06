@@ -25,6 +25,11 @@ const Projects = (props) => {
             'A property renting web app which allows users to create listings for properties which they would like to rent out to others.'
           }
           imgSrc={'/airbrb.png'}
+          style={{
+            opacity: isInView ? 100 : 0,
+            transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
+            transition: 'all 1s cubic-bezier(0,.8,.21,1) 1s',
+          }}
         />
         <ProjectCard
           title={'Slackr'}
@@ -33,6 +38,11 @@ const Projects = (props) => {
             'An instant messaging web app which lets users to directly or group message other users, react, edit, pin, and delete messages, get notifications, profiles, and send photos.'
           }
           imgSrc={'/slackr.png'}
+          style={{
+            opacity: isInView ? 100 : 0,
+            transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
+            transition: 'all 1s cubic-bezier(0,.8,.21,1) 1.25s',
+          }}
         />
         <ProjectCard
           title={'RecipeBook'}
@@ -41,6 +51,11 @@ const Projects = (props) => {
             'An iOS app where users can store and organise their recipes all in one place.'
           }
           imgSrc={'/recipe-book.jpg'}
+          style={{
+            opacity: isInView ? 100 : 0,
+            transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
+            transition: 'all 1s cubic-bezier(0,.8,.21,1) 1.5s',
+          }}
         />
       </div>
     </div>

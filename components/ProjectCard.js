@@ -1,14 +1,17 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
-const ProjectCard = ({ title, skills, description, imgSrc }) => {
+const ProjectCard = ({ title, skills, description, imgSrc, style }) => {
   const [hover, setHover] = useState(false);
 
   useEffect(() => {
     console.log(document.getElementById('test').classList);
   }, [hover]);
   return (
-    <div className='w-full h-[500px] max-lg:h-[400px] bg-space-cadet-light-trans rounded-3xl p-7 shadow-xl flex flex-col'>
+    <div
+      className='w-full h-[500px] max-lg:h-[400px] bg-space-cadet-light-trans rounded-3xl p-7 shadow-xl flex flex-col'
+      style={style}
+    >
       <h3 className='font-medium text-xl text-rose-bonbon mb-2'>{title}</h3>
       <div className='flex flex-row gap-2 flex-wrap text-sm mb-2'>
         {skills.map((skill, idx) => (

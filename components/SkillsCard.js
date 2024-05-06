@@ -13,7 +13,7 @@ const SkillsCard = ({ heading, skills, delay }) => {
       <div
         ref={ref}
         className={
-          'xl:min-h-64 lg:min-h-80 flex flex-col items-center justify-start p-4 bg-glaucous bg-opacity-10 rounded-2xl shadow-xl transition-all max-lg:min-h-min'
+          'xl:min-h-64 lg:min-h-96 flex flex-col items-center justify-start p-4 bg-glaucous bg-opacity-10 rounded-2xl shadow-xl transition-all max-lg:min-h-min'
         }
         style={{
           opacity: isInView ? 100 : 0,

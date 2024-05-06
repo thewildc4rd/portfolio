@@ -36,15 +36,16 @@ const Skills = (props) => {
     'Moment.js',
     'Pandas',
     'Scikit-Learn',
+    'PostgreSQL',
   ];
 
   const softwares = [
-    'VS Code',
+    'Visual Studio Code',
     'Xcode',
     'Microsoft Office',
     'Google Workspace',
-    'Photoshop',
-    'After Effects',
+    'Adobe Photoshop',
+    'Adobe After Effects',
     'SketchUp',
     'Final Cut Pro',
   ];
