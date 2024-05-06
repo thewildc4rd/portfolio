@@ -93,7 +93,7 @@ export default function Navbar() {
       {path === '/' && (
         <>
           <Link
-            href={'/'}
+            href={''}
             scroll={false}
             onClick={() => {
               if (open) {
@@ -131,7 +131,7 @@ export default function Navbar() {
                   setSelectedId(link.id);
                 }}
                 scroll={false}
-                href={'/'}
+                href={''}
               >
                 {link.title}
               </Link>
