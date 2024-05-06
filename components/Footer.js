@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import LinkedinIcon from './LinkedinIcon';
 import GitHubIcon from './GitHubIcon';
@@ -13,7 +12,7 @@ export default function Footer() {
         <Link href={'https://github.com/thewildc4rd'} target='_blank'>
           <GitHubIcon style={'opacity-100 hover:opacity-80 transition-all'} />
         </Link>
-        <Link href={'/resume.pdf'} target='_blank'>
+        <Link href={'/./resume.pdf'} target='_blank'>
           <div className='ml-1 text-center bg-naples-yellow px-2 py-1 rounded-full text-oxford-blue opacity-100 hover:opacity-80 transition-all'>
             resume
           </div>

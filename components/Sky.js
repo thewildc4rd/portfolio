@@ -41,7 +41,7 @@ const Sky = (props) => {
       {[1, 2, 3].map((num) => (
         <motion.img
           key={num}
-          src={`/cloud${num}.png`}
+          src={`./cloud${num}.png`}
           alt={'cloud'}
           width={'500'}
           height={'500'}

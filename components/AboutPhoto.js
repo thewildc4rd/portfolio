@@ -79,7 +79,7 @@ const AboutPhoto = (props) => {
           fill={'#324591'}
         />
         <Image
-          src={'/headshot.png'}
+          src={'/./headshot.png'}
           alt={'A headshot of me'}
           width={'350'}
           height={'350'}

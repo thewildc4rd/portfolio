@@ -104,7 +104,7 @@ export default function Navbar() {
             className={!open ? 'max-xm:hidden' : 'max-xm:mt-28'}
           >
             <Image
-              src={'/SN_logo.png'}
+              src={'/./SN_logo.png'}
               alt={'SN'}
               width={'50'}
               height={'50'}

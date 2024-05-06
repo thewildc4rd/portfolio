@@ -23,7 +23,7 @@ const Projects = (props) => {
           title={'Portfolio'}
           skills={['HTML', 'CSS', 'JavaScript', 'Next.js']}
           description={'My portfolio (this) website!'}
-          imgSrc={'/portfolio.png'}
+          imgSrc={'/./portfolio.png'}
           centerImg={true}
           style={{
             opacity: isInView ? 100 : 0,
@@ -39,7 +39,7 @@ const Projects = (props) => {
           description={
             'A property renting web app which allows users to create listings for properties which they would like to rent out to others.'
           }
-          imgSrc={'/airbrb.png'}
+          imgSrc={'/./airbrb.png'}
           style={{
             opacity: isInView ? 100 : 0,
             transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
@@ -52,7 +52,7 @@ const Projects = (props) => {
           description={
             'An instant messaging web app which lets users to directly or group message other users, react, edit, pin, and delete messages, get notifications, profiles, and send photos.'
           }
-          imgSrc={'/slackr.png'}
+          imgSrc={'/./slackr.png'}
           style={{
             opacity: isInView ? 100 : 0,
             transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
@@ -65,7 +65,7 @@ const Projects = (props) => {
           description={
             'An iOS app where users can store and organise their recipes all in one place.'
           }
-          imgSrc={'/recipe-book.jpg'}
+          imgSrc={'/./recipe-book.jpg'}
           style={{
             opacity: isInView ? 100 : 0,
             transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',

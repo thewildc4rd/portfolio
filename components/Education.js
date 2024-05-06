@@ -37,7 +37,7 @@ const Education = (props) => {
         }}
       >
         <Image
-          src={'/UNSW_logo.png'}
+          src={'/./UNSW_logo.png'}
           width={'100'}
           height={'100'}
           className='rounded-full shadow-xl w-[150px] h-[150px] max-xm:w-[100px] max-xm:h-[100px]'
