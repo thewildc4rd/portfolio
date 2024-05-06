@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import GitHubIcon from './GitHubIcon';
@@ -68,7 +68,7 @@ const ProjectCard = ({ title, skills, description, imgSrc, centerImg, style, onC
             centerImg ? 'flex items-center' : ''
           } ${hover ? 'left-14' : 'left-20'}`}
         >
-          <Image src={imgSrc} width={1095} height={328} alt='Photo of the project' />
+          <img src={imgSrc} width={1095} height={328} alt='Photo of the project' />
         </div>
       </div>
     </div>

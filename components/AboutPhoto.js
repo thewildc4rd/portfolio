@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
-import Image from 'next/image';
 import React from 'react';
 import CrossDoodle from './CrossDoodle';
 import ZigZagDoodle from './ZigZagDoodle';
@@ -78,8 +78,8 @@ const AboutPhoto = (props) => {
           delay={'1s'}
           fill={'#324591'}
         />
-        <Image
-          src={'/./headshot.png'}
+        <img
+          src={'./headshot.png'}
           alt={'A headshot of me'}
           width={'350'}
           height={'350'}

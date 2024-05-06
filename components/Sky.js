@@ -2,7 +2,6 @@ import React from 'react';
 import SquiggleDoodle from './SquiggleDoodle';
 import { motion, useAnimationControls, useScroll, animate } from 'framer-motion';
 import { useEffect } from 'react';
-import Image from 'next/image';
 
 const Sky = (props) => {
   const controls = useAnimationControls();
@@ -54,8 +53,8 @@ const Sky = (props) => {
           className={`shooting-star shooting-star-${num} transition-all`}
         ></motion.span>
       ))}
-      <Image
-        src={'/down_arrow.svg'}
+      <img
+        src={'./down_arrow.svg'}
         alt={'down arrow'}
         width={'40'}
         height={'40'}

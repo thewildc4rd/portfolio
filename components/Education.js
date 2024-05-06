@@ -1,4 +1,4 @@
-import Image from 'next/image';
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import DoubleLineDoodle from './DoubleLineDoodle';
 import { useRef } from 'react';
@@ -36,8 +36,8 @@ const Education = (props) => {
           transition: 'all 0.75s cubic-bezier(0,.8,.21,1) 1.5s',
         }}
       >
-        <Image
-          src={'/./UNSW_logo.png'}
+        <img
+          src={'./UNSW_logo.png'}
           width={'100'}
           height={'100'}
           className='rounded-full shadow-xl w-[150px] h-[150px] max-xm:w-[100px] max-xm:h-[100px]'
