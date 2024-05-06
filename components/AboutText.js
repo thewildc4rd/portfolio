@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import React from 'react';
 
 const AboutText = (props) => {
@@ -23,6 +24,15 @@ const AboutText = (props) => {
       <p className='mt-4 text-lg'>
         I am on track to graduate by the end of 2024 so I am actively seeking 2025 Graduate roles
         and 2024/25 Summer internships for Software Engineering, IT, Commerce, and/or Economics.
+      </p>
+      <p className='mt-4 text-lg'>
+        For a more compact version of everything shown in my portfolio, check out
+        <Link href={'/resume.pdf'} target='_blank'>
+          <span className='inline-block ml-2 py-2 px-3 bg-[#333d5d] hover:bg-[#445076] text-blue-150 bg-opacity-70 rounded-xl w-fit hover:scale-105 hover:bg-opacity-80 transition-all'>
+            my resume
+          </span>
+        </Link>
+        .
       </p>
 
       <div className='w-full bg-space-cadet-light h-1 rounded my-4' />

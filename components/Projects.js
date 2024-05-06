@@ -2,12 +2,13 @@ import React from 'react';
 import SquiggleDoodleV3 from './SquiggleDoodleV3';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
-import Image from 'next/image';
 import ProjectCard from './ProjectCard';
+import { useRouter } from 'next/navigation';
 
 const Projects = (props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const router = useRouter();
 
   return (
     <div
@@ -18,6 +19,20 @@ const Projects = (props) => {
       <h2 className='text-4xl font-semibold z-10'>Projects</h2>
       <SquiggleDoodleV3 offset={isInView ? 0 : 1350} />
       <div className='mt-10 flex flex-col gap-10 h-full w-full'>
+        <ProjectCard
+          title={'Portfolio'}
+          skills={['HTML', 'CSS', 'JavaScript', 'Next.js']}
+          description={'My portfolio (this) website!'}
+          imgSrc={'/portfolio.png'}
+          centerImg={true}
+          style={{
+            opacity: isInView ? 100 : 0,
+            transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
+            transition: 'all 1s cubic-bezier(0,.8,.21,1) 1s',
+          }}
+          onClick={() => router.push('/')}
+          github={'https://github.com/thewildc4rd/portfolio'}
+        />
         <ProjectCard
           title={'Airbrb'}
           skills={['HTML', 'CSS', 'JavaScript', 'React.js']}
@@ -56,6 +71,7 @@ const Projects = (props) => {
             transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 400px)',
             transition: 'all 1s cubic-bezier(0,.8,.21,1) 1.5s',
           }}
+          centerImg={true}
         />
       </div>
     </div>

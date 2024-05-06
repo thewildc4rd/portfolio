@@ -56,8 +56,9 @@ export default function Navbar() {
   useEffect(() => {
     if (selectedId === 'home') {
       globalThis.scrollTo({ top: 0, behavior: 'smooth' });
-    } else {
+    } else if (selectedId != '') {
       document.getElementById(selectedId).scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setSelectedId('');
     }
   }, [selectedId]);
 
