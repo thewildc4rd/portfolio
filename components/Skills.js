@@ -59,8 +59,13 @@ const Skills = (props) => {
       ref={ref}
       className='section w-screen h-fit flex flex-col justify-center items-center px-10 py-28 bg-space-cadet-light relative'
     >
-      <h2 className='text-4xl font-semibold z-10'>Technical Skills</h2>
-      <WaveDoodle offset={isInView ? 0 : 750} />
+      <h2 className='text-4xl font-semibold z-10 text-center'>
+        <span className='max-[360px]:hidden'>Technical</span> Skills
+      </h2>
+      <div className='max-[360px]:w-[110px] max-[360px]:overflow-hidden'>
+        <WaveDoodle offset={isInView ? 0 : 750} />
+      </div>
+
       <div className='w-full h-full flex flex-row gap-8 mt-10 max-lg:flex-col'>
         <SkillsCard heading={'Languages'} skills={languages} />
         <SkillsCard heading={'Frameworks & Libraries'} skills={frameworks} delay={'0.25s'} />

@@ -38,10 +38,10 @@ const AboutPhoto = (props) => {
   ];
 
   return (
-    <div className='h-[550px] w-[520px] relative flex justify-center items-center max-lg:w-full max-lg:h-[500px]'>
+    <div className='h-[550px] w-[520px] relative flex justify-center items-center max-lg:w-full max-lg:h-[500px] max-md:h-[450px] max-sm:h-[400px]'>
       <div
         ref={ref}
-        className='card-1 opacity-0 w-full h-full max-w-[350px] max-h-[400px] rounded-3xl absolute z-[3] translate-x-3 translate-y-96 flex items-end shadow-xl shadow-gray-900 overflow-hidden'
+        className='card-1 opacity-0 w-full h-full max-w-[350px] max-h-[400px] max-md:max-w-[300px] max-md:max-h-[350px] max-sm:max-w-[210px] max-sm:max-h-[260px] rounded-3xl absolute z-[3] translate-x-3 translate-y-96 flex items-end shadow-xl shadow-gray-900 overflow-hidden'
         style={{
           opacity: isInView ? 100 : 0,
           transform: isInView ? 'translate(12px, 40px)' : 'translate(12px, 384px)',
@@ -87,7 +87,7 @@ const AboutPhoto = (props) => {
         />
       </div>
       <div
-        className='card-2 w-full h-full max-w-[350px] max-h-[420px] p-5 text-pink-800 text-opacity-40 rounded-3xl absolute z-[2] -translate-x-6 -translate-y-8 -rotate-12 shadow-xl shadow-gray-900 overflow-hidden'
+        className='card-2 w-full h-full max-w-[350px] max-h-[420px] max-md:max-w-[300px] max-md:max-h-[350px] max-sm:max-w-[220px] max-sm:max-h-[250px] p-5 text-pink-800 text-opacity-40 rounded-3xl absolute z-[2] -translate-x-6 -translate-y-8 -rotate-12 shadow-xl shadow-gray-900 overflow-hidden'
         style={{
           opacity: isInView ? 100 : 0,
           transform: isInView
@@ -101,7 +101,7 @@ const AboutPhoto = (props) => {
         ))}
       </div>
       <div
-        className='card-3 w-full h-full max-w-[450px] max-h-[350px] p-5 text-yellow-600 text-opacity-40 rounded-3xl absolute z-[1] translate-y-8 -rotate-12 shadow-xl shadow-gray-900 overflow-hidden'
+        className='card-3 w-full h-full max-w-[450px] max-h-[350px] max-md:max-w-[370px] max-md:max-h-[310px] max-sm:max-w-[290px] max-sm:max-h-[190px] p-5 text-yellow-600 text-opacity-40 rounded-3xl absolute z-[1] translate-y-8 -rotate-12 shadow-xl shadow-gray-900 overflow-hidden'
         style={{
           opacity: isInView ? 100 : 0,
           transform: isInView ? 'translate(0, 32px) rotate(-12deg)' : 'translate(0, 192px)',

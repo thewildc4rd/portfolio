@@ -5,7 +5,7 @@ const SquiggleDoodle = (props) => {
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 1491 117'
-      className='z-10 w-[600px] ml-5 max-md:w-[450px] max-sm:w-[350px]'
+      className='z-10 w-[600px] ml-5 max-md:w-[450px] max-sm:w-[350px] max-xs:w-[280px]'
     >
       <path
         className='squiggle'

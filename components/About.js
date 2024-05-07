@@ -16,7 +16,7 @@ const About = (props) => {
     >
       <h1 className='text-4xl font-semibold'>About Me</h1>
       <CurvedDoodle offset={isInView ? 0 : 600} />
-      <div className='flex flex-row max-lg:flex-col max-lg:h-fit gap-x-10 gap-y-4 mt-4 max-lg:mt-10'>
+      <div className='flex flex-row max-lg:flex-col max-lg:h-fit gap-x-10 gap-y-4 mt-4 max-lg:mt-10 max-sm:mt-0 max-sm:gap-y-0'>
         <AboutPhoto />
         <AboutText />
       </div>

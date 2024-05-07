@@ -101,7 +101,7 @@ export default function Navbar() {
               }
               setSelectedId('home');
             }}
-            className={!open ? 'max-xm:hidden' : 'max-xm:mt-28'}
+            className={!open ? 'max-xm:hidden' : 'max-xm:mt-10'}
           >
             <img
               src={'./SN_logo.png'}

@@ -264,3 +264,10 @@ nav {
     padding: 0.75rem;
   }
 }
+
+@media screen and (max-width:400px) {
+  .cloud:nth-of-type(1) {
+    top: 28%;
+    left: -10%;
+  }
+}

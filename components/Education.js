@@ -29,7 +29,7 @@ const Education = (props) => {
       <h2 className='text-4xl font-semibold z-10'>Education</h2>
       <DoubleLineDoodle offset1={isInView ? 0 : 500} offset2={isInView ? 0 : 400} />
       <div
-        className='mt-10 flex flex-row gap-5 w-full justify-center'
+        className='mt-10 flex flex-row gap-5 w-full justify-center max-sm:flex-col max-sm:items-center max-md:gap-2 max-sm:gap-6 '
         style={{
           opacity: isInView ? 100 : 0,
           transform: isInView ? 'translate(0px, 0px)' : 'translate(0px, 384px)',
@@ -40,7 +40,7 @@ const Education = (props) => {
           src={'./UNSW_logo.png'}
           width={'100'}
           height={'100'}
-          className='rounded-full shadow-xl w-[150px] h-[150px] max-xm:w-[100px] max-xm:h-[100px]'
+          className='rounded-full shadow-xl w-[150px] h-[150px] max-xm:w-[100px] max-xm:h-[100px] max-md:w-[90px] max-md:h-[90px] max-sm:w-[150px] max-sm:h-[150px]'
           alt='UNSW logo'
         />
         <div className='bg-space-cadet-light-trans p-7 rounded-3xl shadow-xl w-fit text-lg flex flex-col lg:pr-36 xl:pr-48'>

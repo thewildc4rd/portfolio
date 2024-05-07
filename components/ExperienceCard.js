@@ -3,9 +3,9 @@ import React from 'react';
 const ExperienceCard = ({ title, timePeriod, company, dotPoints, style }) => {
   return (
     <div className='w-full bg-white bg-opacity-[2%] rounded-3xl p-7 shadow-xl' style={style}>
-      <div className='flex flex-row w-full'>
+      <div className='flex flex-row w-full max-sm:flex-col'>
         <h3 className='font-medium text-xl text-sky-magenta mb-1'>{title}</h3>
-        <div className='text-base font-medium mb-2 ml-auto justify-center items-center'>
+        <div className='text-base font-medium mb-2 ml-auto max-sm:ml-0 max-sm:text-start text-end'>
           {timePeriod}
         </div>
       </div>
