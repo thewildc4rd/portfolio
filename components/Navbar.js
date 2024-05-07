@@ -101,7 +101,7 @@ export default function Navbar() {
               }
               setSelectedId('home');
             }}
-            className={!open ? 'max-xm:hidden' : 'max-xm:mt-10'}
+            className={!open ? 'max-xm:hidden' : 'max-xm:mt-2'}
           >
             <img
               src={'./SN_logo.png'}
@@ -113,7 +113,7 @@ export default function Navbar() {
             />
           </Link>
           <div
-            className={`flex justify-center gap-9 items-center font-black ${
+            className={`flex justify-center gap-9 max-xm:gap-5 items-center font-black ${
               open ? 'max-xm:flex-col  max-xm:mb-auto' : 'max-xm:hidden'
             }`}
           >
