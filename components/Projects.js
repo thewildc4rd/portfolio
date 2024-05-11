@@ -21,7 +21,7 @@ const Projects = (props) => {
       <div className='mt-10 flex flex-col gap-10 h-full w-full'>
         <ProjectCard
           title={'Portfolio'}
-          skills={['HTML', 'CSS', 'JavaScript', 'Next.js']}
+          skills={['HTML', 'CSS', 'JavaScript', 'Next.js', 'Tailwind']}
           description={'My portfolio (this) website!'}
           imgSrc={'./portfolio.png'}
           centerImg={true}
@@ -35,7 +35,7 @@ const Projects = (props) => {
         />
         <ProjectCard
           title={'Airbrb'}
-          skills={['HTML', 'CSS', 'JavaScript', 'React.js']}
+          skills={['HTML', 'CSS', 'JavaScript', 'React.js', 'Bootstrap', 'Material-UI']}
           description={
             'A property renting web app which allows users to create listings for properties which they would like to rent out to others.'
           }
