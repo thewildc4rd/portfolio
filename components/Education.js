@@ -50,7 +50,7 @@ const Education = (props) => {
           <div className='text-base font-medium mb-4'>Feb 2021 - Present (Expected Nov 2024)</div>
           <ul className='text-lg list-disc ml-8'>
             <li className='mb-1'>
-              <span className='font-medium'>WAM:</span> 74.875
+              <span className='font-medium'>WAM:</span> 75.115 (DN)
             </li>
             <li>
               <span className='font-medium'>Relevant Coursework:</span>
