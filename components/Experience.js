@@ -33,7 +33,7 @@ const Expierence = (props) => {
         />
         <ExperienceCard
           title={'IT Administrator'}
-          timePeriod={'Jul 2023 – Present'}
+          timePeriod={'Aug 2020 – Present'}
           company={'Blankisa'}
           dotPoints={[
             'Maintain the company’s computers, provide IT assistance, improve their Squarespace website, and help improve productivity through the integration of new technology',
